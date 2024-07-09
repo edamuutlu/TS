@@ -5,10 +5,10 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { todoList } from '../types/Type'
 
 type Props = {
-  task: any,
-  deleteTodo: any,
-  editTodo: any,
-  toggleComplete: any,
+  task: todoList,
+  deleteTodo: (id: string) => void,
+  editTodo: (id: string) => void,
+  toggleComplete: (id: string) => void,
 }
 
 export const Todo : React.FC <Props> = ({task, deleteTodo, editTodo, toggleComplete}) => {
