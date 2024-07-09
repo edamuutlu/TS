@@ -53,8 +53,8 @@ const ToDoWrapper = () => {
                         key={todo.id}
                         task={todo}
                         deleteTodo={deleteTodo}
-                        toggleComplete={toggleComplete}
                         editTodo={editTodo}
+                        toggleComplete={toggleComplete}
                     />
                 )
             )}

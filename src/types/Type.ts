@@ -1,7 +1,7 @@
 export type todoList = {
-    id: string|number;
+    id: string;
     task: string;
-    completed: boolean;
+    completed?: any;
     isEditing: boolean;
 };
 

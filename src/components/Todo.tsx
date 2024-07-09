@@ -2,12 +2,13 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import { todoList } from '../types/Type'
 
 type Props = {
-  task: string,
-  deleteTodo: (id: number) => void,
-  editTodo: (id: number) => void,
-  toggleComplete: (id: number) => void,
+  task: any,
+  deleteTodo: any,
+  editTodo: any,
+  toggleComplete: any,
 }
 
 export const Todo : React.FC <Props> = ({task, deleteTodo, editTodo, toggleComplete}) => {

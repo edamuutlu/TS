@@ -3,7 +3,7 @@ import { todoList } from '../types/Type';
 
 type IProps = {
     editTodo: (task: string, id: string) => void;
-    task: todoList;
+    task: any;
 };
 
 export const EditTodoForm: React.FC<IProps> = ({ editTodo, task }) => {
